@@ -133,7 +133,7 @@ a, a:hover{
 
 #gnb > li:hover .d2ul{
     z-index: 999;
-    height: auto;
+    height: 192px;
     background-color: black;
 }
 
