@@ -6,52 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 <!-- 2시 35분부터 시작 -->
 <body>
     <header id="hd">
-        <div class="container">
-            <h1><a href="#"><img src="asset/logo.png" alt="로고"></a></h1>
-            <ul id="gnb" class="d-flex align-items-center">
+        <div id="tab" class="container d-flex justify-content-between align-items-center">
+            <h1 class="ml-5"><a href="#"><img src="asset/logo.png" alt="로고"></a></h1>
+            <ul id="gnb" class="d-flex align-items-center mr-5">
                 <li class="rel">
-                    <a href="#">MENU-1</a>
-                    <div class="d2ul">
-                        <li class="abs"><a href="#"></a></li>
-                        <li class="abs"><a href="#"></a></li>
-                        <li class="abs"><a href="#"></a></li>
-                        <li class="abs"><a href="#"></a></li>
-                    </div>
+                    <a href="#">소장채널</a>
+                    <ul class="d2ul">
+                        <li><a href="#">SubMenu1</a></li>
+                        <li><a href="#">SubMenu2</a></li>
+                        <li><a href="#">SubMenu3</a></li>
+                        <li><a href="#">SubMenu4</a></li>
+                    </ul>
                 </li>
                 <li class="rel">
-                    <a href="#">MENU-2</a>
-                    <div class="d2ul">
-                        <li class="abs"><a href="#"></a></li>
-                        <li class="abs"><a href="#"></a></li>
-                        <li class="abs"><a href="#"></a></li>
-                        <li class="abs"><a href="#"></a></li>
-                    </div>
+                    <a href="#">장르별</a>
+                    <ul class="d2ul">
+                        <li><a href="#">SubMenu1</a></li>
+                        <li><a href="#">SubMenu2</a></li>
+                        <li><a href="#">SubMenu3</a></li>
+                        <li><a href="#">SubMenu4</a></li>
+                    </ul>
                 </li>
                 <li class="rel">
-                    <a href="#">MENU-3</a>
-                    <div class="d2ul">
-                        <li class="abs"><a href="#"></a></li>
-                        <li class="abs"><a href="#"></a></li>
-                        <li class="abs"><a href="#"></a></li>
-                        <li class="abs"><a href="#"></a></li>
-                    </div>
+                    <a href="#">테마별</a>
+                    <ul class="d2ul">
+                        <li><a href="#">SubMenu1</a></li>
+                        <li><a href="#">SubMenu2</a></li>
+                        <li><a href="#">SubMenu3</a></li>
+                        <li><a href="#">SubMenu4</a></li>
+                    </ul>
                 </li>
                 <li class="rel">
-                    <a href="#">MENU4</a>
-                    <div class="d2ul">
-                        <li class="abs"><a href="#"></a></li>
-                        <li class="abs"><a href="#"></a></li>
-                        <li class="abs"><a href="#"></a></li>
-                        <li class="abs"><a href="#"></a></li>
+                    <a href="#">시대별</a>
+                    <ul class="d2ul">
+                        <li><a href="#">SubMenu1</a></li>
+                        <li><a href="#">SubMenu2</a></li>
+                        <li><a href="#">SubMenu3</a></li>
+                        <li><a href="#">SubMenu4</a></li>
                     </div>
                 </li>
             </ul>
         </div>
     </header>
+    <section id="slide">
+        <div class="swiper container">
+            <div class="swiper-wrapper d-flex">
+                <div class="swiper-slide"><img src="asset/img1.jpg" alt="이미지1"></div>
+                <div class="swiper-slide"><img src="asset/img2.jpg" alt="이미지2"></div>
+                <div class="swiper-slide"><img src="asset/img3.jpg" alt="이미지3"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="slide-txt">세기의 미술관</div>
+        </div>
+        
+    </section>
+    <section id="content" class="container d-flex justify-content-between">
+        <div id="notice" class="col-4">
+            <div class="notice-title">공지사항</div>
+            <ul id="noticetb">
+                <li class="bg-white">세계의 미술작품 공지사항1</li>
+                <li class="bg-gr">세계의 미술작품 공지사항2</li>
+                <li class="bg-white">세계의 미술작품 공지사항3</li>
+                <li class="bg-gr">세계의 미술작품 공지사항4</li>
+            </ul>
+        </div>
+        <div id="gallery" class="col-4">
+            <div class="gallery-title">갤러리</div>
+            <ul id="gallerytb" class="d-flex justify-content-between align-items-center">
+                <li><img src="asset/icon1.jpg" alt="갤러리1"></li>
+                <li><img src="asset/icon2.jpg" alt="갤러리2"></li>
+                <li><img src="asset/icon3.jpg" alt="갤러리3"></li>
+            </ul>
+        </div>
+        <div id="link" class="">
+            <img src="asset/banner.jpg" alt="링크">
+        <div id="linkabs" class="abs">바로가기</div>
+        </div>
+    </section>
+    <footer id="ft" class="d-flex align-items-center">
+        <ul class="container d-flex justify-content-between align-items-center">
+            <li><img src="asset/logo.png" alt="하단로고"></li>
+            <li>COPYRIGHT BY WEBDESIGN ALL RIGHTS RESERVED</li>
+            <li id="snsbox" class="d-flex">
+                <img src="asset/sns1.jpg" alt="페이스북">
+                <img src="asset/sns2.jpg" alt="트위터">
+                <img src="asset/sns3.jpg" alt="인스타">
+            </li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/jquery-1.12.3.js"></script>
     <script src="js/slide.js"></script>
 </body>

@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 ul,li{
@@ -14,6 +15,11 @@ a, a:hover{
 
 .container{
     width: 1200px;
+    margin: 0 auto;
+}
+
+.mx-auto{
+    margin: 0 auto;
 }
 
 .d-block{
@@ -40,7 +46,7 @@ a, a:hover{
     justify-content: center;
 }
 
-.jusitfy-content-between{
+.justify-content-between{
     justify-content: space-between;
 }
 
@@ -84,3 +90,151 @@ a, a:hover{
     position: relative;
 }
 
+/* 꾸밈 css */
+
+#hd{
+    background-color: #222;
+}
+
+#tab{
+    height: 100px;
+}
+
+#gnb > li{
+    padding: 25px 0;
+    text-align: center !important;
+}
+
+#gnb > li > a{
+    color: white;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+}
+
+#gnb > li:hover > a{
+    background-color: gray;
+}
+
+.d2ul{
+    position: absolute;
+    width: 140px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    top:100%;
+    left: 0;
+}
+
+.d2ul li{
+    padding: 15px 0;
+}
+
+#gnb > li:hover .d2ul{
+    z-index: 999;
+    height: auto;
+    background-color: black;
+}
+
+.d2ul li a{
+    color: white;
+}
+
+.d2ul > li:hover{
+    background-color: rgb(187, 154, 111) !important;
+}
+
+.swiper{
+    position: relative;
+    height: 300px;
+}
+
+.swiper-slide img{
+    display: block;
+}
+
+
+
+.slide-txt{
+    padding: 20px 40px;
+    font-size: 15pt;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    left: 50%; top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+
+#link{
+    position: relative;
+    width: 400px;
+}
+
+#linkabs{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 20px;
+    background-color: rgba(187, 154, 111, 0.664);
+}
+
+.notice-title, .gallery-title{
+    display: inline-block;
+    padding: 9px 30px;
+    color: white;
+    background-color: rgb(187, 154, 111);
+}
+
+#notice ul{
+    height: 160px;
+    border: 1px solid rgb(197, 197, 197);
+}
+
+#notice li{
+    height: 40px;
+    line-height: 40px;
+}
+
+#gallery ul{
+    height: 160px;
+    border: 1px solid rgb(197, 197, 197);
+}
+
+#gallery li{
+    margin:0 20px
+}
+
+#content{
+    height: 200px;
+}
+
+.bg-gr{
+    background-color: rgb(204, 204, 204);
+}
+
+.bg-white{
+    background-color: white;
+}
+
+#ft{
+    padding: 20px 0;
+    height: 100px;
+    background-color: rgb(187, 154, 111);
+    color: white;
+}
+
+#snsbox img{
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.ml-5{
+    margin-left: 15px;
+}
+
+.mr-5{
+    margin-right: 15px;
+}
