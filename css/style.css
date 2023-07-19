@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    width: 1200px;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inline{
+    display: inline;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.jusitfy-content-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.h-100{
+    height: 100px;
+}
+
+.h-200{
+    height: 200px;
+}
+
+.h-300{
+    height: 300px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.col-6{
+    width: 100%;
+}
+
+.col-4{
+    width: 33%;
+}
+
+.abs{
+    position: absolute;
+}
+
+.rel{
+    position: relative;
+}
+
