@@ -435,3 +435,8 @@ a{
     background-color: rgb(247, 126, 146);
     opacity:0.8
 }
+
+#slide-box img{
+    width: 1320px;
+    height: 860px;
+}
