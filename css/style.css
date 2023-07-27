@@ -1,4 +1,15 @@
+
+@font-face {
+    font-family: 'pr';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
 *{
+    font-family: 'pr', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -14,6 +25,10 @@ a, a:hover{
 
 .container{
     width: 1200px;
+}
+
+.d-none{
+    display: none;
 }
 
 .d-block{
@@ -83,4 +98,340 @@ a, a:hover{
 .rel{
     position: relative;
 }
+/* 오후 12시 48분 시작 */
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w-200{
+    width: 200px;
+}
+
+.w-400{
+    width: 400px;
+}
+
+.h-100{
+    height: 100px;
+}
+
+.h-860{
+    height: 860px;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inline{
+    display: inline;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.jusitfy-content-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.ovh{
+    overflow: hidden;
+}
+
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+.gallery li{
+    width: 80px;
+    height: 80px;
+}
+
+/* 개별 클래스 */
+
+#slide{
+    width: calc(100% - 200px - 400px);
+}
+
+#hd{
+    background-color: rgb(255, 251, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#hd h1 img{
+    height: 70px;
+}
+
+#hd h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#hd #gnb > li{
+    background-color: #f78383;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    transition: 0.2s;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#gnb > li > a{
+    color: white;
+}
+
+#gnb > li:hover > a{
+    color: #f78383;
+}
+
+#hd #gnb > li:hover{
+    background-color: rgb(255, 226, 218)
+}
+
+#gnb .d2ul{
+    width: 0px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#gnb li:hover .d2ul{
+    position: absolute;
+    width:150px;
+    right: -100%;
+    top: 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 8px 2px rgba(179, 179, 179, 0.5);
+}
+
+.d2ul li:hover{
+    background-color: rgb(255, 226, 218);
+}
+
+.d2ul li a{
+    color: rgb(0, 0, 0);
+}
+
+.d2ul li:hover a{
+    color: #f78383;
+}
+
+.ads{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f1f1f1;
+    margin-bottom: 60px;
+}
+
+.ads ul img{
+    width: 50px;
+}
+
+.notice h3, .gallery h3, .board h3{
+    font-weight: unset;
+    margin-left: 20px;
+    font-size: 12pt;
+    display: inline-block;
+    background-color: #f78383;
+    padding: 5px 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.notice > h3 > a, .gallery > h3 > a, .board > h3 > a{
+    color: white;
+}
+
+.content{
+    margin-left: 15px;
+}
+
+
+.notice-box, .gallery-box, .board-box{
+    margin: 0 20px;
+    border-top: 1px solid #f78383;
+    border-bottom: 1px solid #f78383;
+    margin-bottom: 40px;
+}
+
+
+
+.notice-box > li span, .board-box > li span{
+    margin-left: 60px;
+}
+
+.notice li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    padding: 5px 0;
+    border-bottom: 0.7px solid rgb(180, 180, 180);
+    background-color: white;
+}
+
+.board li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    padding: 5px 0;
+    border-bottom: 0.7px solid rgb(180, 180, 180);
+    background-color: white;
+}
+
+.board li:hover{
+    background-color: #ffe3e3;
+}
+
+.notice li:hover{
+    background-color: #ffe3e3;
+}
+
+.gallery > li > a, .gallery li img{
+    display: block;
+}
+
+.gallery li img{
+    border-radius: 30%;
+    margin-right: 8px;
+    padding: 10px 0;
+}
+
+.notice li:hover a{
+    color: #f78383;
+}
+.board li:hover a{
+    color: #f78383;
+}
+
+
+.bn{
+    border-bottom: none !important;
+}
+
+#ft{
+    background-color: #f78383;
+}
+
+#ft li img {
+    height: 70px;
+}
+
+.mx-auto{
+    margin: 0 auto;
+}
+
+#ft > ul{
+    padding: 10px 0;
+}
+
+#ft #icons img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.ml-50{
+    margin-left: 50px;
+}
+
+.mr-50{
+    margin-right: 50px;
+}
+
+.gallery img:hover{
+    background-color: rgba(255, 255, 255, 0.562);
+    background-blend-mode: screen;
+    opacity: 0.5;
+}
+
+
+.imgcolor{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+#ft .content{
+    text-align: center;
+}
+
+.gallery .banner1{
+    background-image: url(../asset/E3/banner1.jpg);
+    background-size: cover;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.gallery .banner2{
+    background-image: url(../asset/E3/banner2.jpg);
+    background-size: cover;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.gallery .banner3{
+    background-image: url(../asset/E3/banner3.jpg);
+    background-size: cover;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.gallery li{
+    width: 100px;
+    height: 100px;
+    padding: 10px 0;
+    margin: 10px 4px;
+}
+
+
+.gallery li:hover .banner1,
+.gallery li:hover .banner2,
+.gallery li:hover .banner3{
+    background-blend-mode:multiply;
+    background-color: rgb(247, 126, 146);
+    opacity:0.8
+}
