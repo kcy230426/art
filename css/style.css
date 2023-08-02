@@ -14,6 +14,7 @@
 
 body{
     position: relative;
+    background-color: rgb(238, 238, 238);
 }
 
 ul,li{
@@ -163,15 +164,15 @@ a{
 }
 
 .col-3{
-    width: calc(100% * 3);
+    width: calc(100% / 3);
 }
 
 .col-4{
-    width: calc(100% * 4)
+    width: calc(100% / 4)
 }
 
 .col-6{
-    width: calc(100% * 2);
+    width: calc(100% / 2);
 }
 
 .col-12{
@@ -210,6 +211,10 @@ a{
 .container{
     width: 1200px;
     margin: 0 auto;
+}
+
+.border-bottom-0{
+    border-bottom: 0 !important;
 }
 
 /* 개별 클래스 */
@@ -274,8 +279,12 @@ a{
     height: 60px;
 }
 
+.d2ul li:hover{
+    background-color: orange;
+}
+
 .d2ul li:hover a{
-    color: rgb(255, 255, 255)
+    color: rgb(17, 17, 17)
 }
 
 .d2ul > li > a{
@@ -298,3 +307,47 @@ a{
 #gnb:hover > li::before{
     height: 180px !important;
 }
+
+#slide ul{
+    width: 3600px;
+}
+
+#slide img{
+    display: block;
+}
+
+.slide-info{
+    display: block;
+    background-color:rgba(255, 166, 0, 0.822);
+    color: white;
+    padding: 20px 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.notice .title{
+    display: inline-block;
+    padding: 8px 32px;
+    background-color: orange;
+    color: #222;
+    font-size: 15pt;
+}
+
+.notice ul{
+    border: 1px solid rgb(88, 88, 88); 
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.notice ul li{
+    border-bottom: 1px solid rgb(88, 88, 88);
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 크기를 이미지에 맞게 조절하지 않으면 부자연스럽게 슬라이드 처리됨 */
