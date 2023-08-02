@@ -1,4 +1,13 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 *{
+    font-family: 'Pretendard-Regular';
     padding: 0;
     margin: 0;
 }
@@ -40,7 +49,7 @@ a, a:hover{
     justify-content: center;
 }
 
-.jusitfy-content-between{
+.justify-content-between{
     justify-content: space-between;
 }
 
@@ -83,4 +92,149 @@ a, a:hover{
 .rel{
     position: relative;
 }
+*{
+    padding: 0;
+    margin: 0;
+}
 
+ul, li{
+    list-style-type: none;
+}
+
+a{
+    color: #222;
+    text-decoration: none;
+}
+
+.d-none{
+    display: none;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+.d-inline{
+    display: inline;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.jusitfy-content-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-base{
+    align-items: baseline;
+}
+
+.abs{
+    position: absolute;
+}
+
+.rel{
+    position: relative;
+}
+
+.col-3{
+    width: calc(100% * 3);
+}
+
+.col-4{
+    width: calc(100% * 4)
+}
+
+.col-6{
+    width: calc(100% * 2);
+}
+
+.col-12{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-black{
+    color: black;
+}
+
+.text-white{
+    color: white;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+.ovh{
+    overflow: hidden;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+/* 개별 클래스 */
+
+
+#hd{
+    width: 1200px;
+    background-color: orangered;
+    padding: 10px;
+}
+
+#hd h1 a, #hd h1 img{
+    display: block;
+}
+
+.d2ul{
+    height: 0;
+    overflow: hidden;
+}
+
+#gnb > li{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+#gnb > li > a{
+    display: block;
+    color: white;
+    text-align: center;
+}
