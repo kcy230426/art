@@ -5,4 +5,7 @@ $(function(){
             $(this).css("margin-left", "0")
         })
     },3000)
+    $("body").on("click", "#threeTab .ntitle", function(){
+        $(this).addClass("on");
+    })
 })
