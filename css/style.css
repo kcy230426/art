@@ -1,4 +1,14 @@
+@font-face {
+    font-family: 'sc';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 *{
+    font-family: 'sc', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -14,6 +24,7 @@ a, a:hover{
 
 .container{
     width: 1200px;
+    margin: 0 auto;
 }
 
 .d-block{
@@ -40,7 +51,7 @@ a, a:hover{
     justify-content: center;
 }
 
-.jusitfy-content-between{
+.justify-content-between{
     justify-content: space-between;
 }
 
@@ -82,5 +93,66 @@ a, a:hover{
 
 .rel{
     position: relative;
+}
+
+/* 개별 클래스 */
+
+#hd{
+    background-color: rgb(54, 128, 240);
+    height: 100px;
+}
+
+#hd > h1{
+    margin-left: 30px;
+}
+
+#gnb{
+    margin-right: 30px;
+}
+
+#gnb > li > a{
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgb(0, 29, 158);
+    color: white;
+}
+
+.d2ul{
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#gnb > li:hover > a{
+    background-color: rgb(22, 22, 22);
+}
+
+#gnb li:hover .d2ul{
+    height: 120px;
+    
+}
+
+.d2ul > li > a{
+    height: 40px;
+    line-height: 40px;
+    width: 140px;
+    background-color: rgb(0, 29, 158);
+    color: white;
+    text-align: center;
+}
+
+
+.d2ul li:hover a{
+    background-color: rgb(101, 155, 255);
+}
+
+#slide a, #slide img{
+    display: block;
+}
+
+.ovh{
+    overflow: hidden;
 }
 
