@@ -83,7 +83,7 @@ a, a:hover{
     width: 100%;
 }
 
-.col-4{
+.col-3{
     width: 33%;
 }
 
@@ -93,6 +93,22 @@ a, a:hover{
 
 .rel{
     position: relative;
+}
+
+.br0{
+    border-right: none !important;
+}
+
+.bb0{
+    border-bottom: none !important;
+}
+
+.bg-sky{
+    background-color: rgb(205, 223, 255);
+}
+
+.bg-gray{
+    background-color: rgb(245, 245, 245);
 }
 
 /* 개별 클래스 */
@@ -119,10 +135,18 @@ a, a:hover{
     color: white;
 }
 
+#gnb > li{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
 .d2ul{
     height: 0;
     overflow: hidden;
     transition: 0.2s;
+    top: 100%;
+    left: 0;
 }
 
 #gnb > li:hover > a{
@@ -152,7 +176,51 @@ a, a:hover{
     display: block;
 }
 
+#slide .slidebox{
+    width: 3600px;
+}
+
 .ovh{
     overflow: hidden;
+}
+
+.gul{
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.slidebox{
+    margin-bottom: 10px;
+}
+
+.titlebox > div{
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid rgb(170, 170, 170);
+}
+
+#threeTab .board{
+    height: 200px;
+}
+
+#threeTab .nul, #threeTab .gul{
+    height: calc(200px - 40px);
+    box-sizing: border-box;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+}
+
+.nul li{
+    height: 39.5px;
+    line-height: 39.5px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
