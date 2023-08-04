@@ -1,4 +1,8 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+
 *{
+    font-family: 'Jeju Myeongjo', serif;
     padding: 0;
     margin: 0;
 }
@@ -12,8 +16,13 @@ a, a:hover{
     color: black;
 }
 
+#hd > .container{
+    width: 1200px;
+}
+
 .container{
     width: 1200px;
+    margin: 0 auto;
 }
 
 .d-block{
@@ -40,7 +49,7 @@ a, a:hover{
     justify-content: center;
 }
 
-.jusitfy-content-between{
+.justify-content-between{
     justify-content: space-between;
 }
 
@@ -84,3 +93,89 @@ a, a:hover{
     position: relative;
 }
 
+.ovh{
+    overflow: hidden;
+}
+
+
+/* 개별 CSS */
+
+#hd{
+    background-color: rgb(48, 98, 204);
+    height: 100px;
+}
+
+#gnb > li{
+    width: 140px;
+    height: 100px;
+    line-height: 100px;
+}
+
+#gnb > li > a{
+    display: block;
+    width: 140px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+#gnb > li:hover > a{
+    background-color: navy;
+    color: white;
+}
+
+.d2ul{
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.d2ul > li{
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.d2ul > li > a{
+    display: block;
+    text-align: center;
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #222;
+    color: white;
+}
+
+.d2ul > li > a:hover{
+    background-color: rgb(83, 83, 83);
+    z-index: 999;
+}
+
+#gnb:hover .d2ul{
+    height: 240px;
+    width: 140px;
+    left: 0;
+    top: 100%;
+    z-index: 999;
+}
+
+#gnb > li:before{
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 0px;
+    background-color: #222;
+    top: 100%;
+    left: -471%;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+#gnb:hover > li::before{
+    height: 240px;
+} 
+
+.slidebox{
+    width: 3600px;
+}
