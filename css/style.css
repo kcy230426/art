@@ -265,3 +265,7 @@ a, a:hover{
     padding: 5px 0;
     color: gray;
 }
+
+.slidebox{
+    width: 2400px;
+}
