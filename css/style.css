@@ -266,6 +266,11 @@ a, a:hover{
     color: gray;
 }
 
+#slide{
+    width: 800px;
+    overflow: hidden;
+}
+
 .slidebox{
     width: 2400px;
 }
