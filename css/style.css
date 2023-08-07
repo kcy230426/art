@@ -1,4 +1,14 @@
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 *{
+    font-family: 'IBMPlexSansKR-Regular';
     padding: 0;
     margin: 0;
 }
@@ -40,7 +50,7 @@ a, a:hover{
     justify-content: center;
 }
 
-.jusitfy-content-between{
+.justify-content-between{
     justify-content: space-between;
 }
 
@@ -69,10 +79,10 @@ a, a:hover{
 }
 
 .col-6{
-    width: 100%;
+    width: 50%;
 }
 
-.col-4{
+.col-3{
     width: 33%;
 }
 
@@ -84,3 +94,174 @@ a, a:hover{
     position: relative;
 }
 
+.ovh{
+    overflow: hidden;
+}
+
+.bt0{
+    border-bottom: none !important;
+}
+
+/* 개별 클래스 */
+
+#left{
+    width: 200px;
+    height: 650px;
+    background-color: rgb(241, 241, 241);
+    margin-right: 5px;
+}
+
+#left h1{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#gnb .d2ul{
+   display: none;
+}
+
+#gnb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gnb > li > a{
+    display: block;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #222;
+    color:white
+}
+
+#gnb > li:hover > a{
+    background-color: pink;
+}
+
+#gnb li:hover .d2ul{
+    width: 200px;
+    position: absolute;
+    display: block;
+    top: -20%;
+    left: 100%;
+}
+
+.d2ul > li > a{
+    display: block;
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: #222;
+    color: white;
+}
+
+.d2ul li:hover a{
+    background-color: pink;
+    color: white;
+}
+
+#slide{
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+
+#threeTab .title{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: pink;
+    text-align: center;
+    line-height: 40px;
+}
+
+#threeTab .notice, #threeTab .gallery #threeTab .banner{
+    width: 33%;
+    height: 200px;
+}
+
+.notice, .gallery{
+    margin-right: 5px;
+}
+
+.notice .box, .gallery .box{
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 160px;
+}
+
+.box > li > a, .box > li span{
+    font-size: 10pt;
+}
+
+.notice .box > li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: calc(160px / 4);
+    line-height: 40px;
+    border-bottom: 1px gray solid;
+    box-sizing: border-box;
+}
+
+.title a{
+    display: block;
+}
+
+.gallery .box > li > a, .gallery .box > li > a{
+    display: block;
+}
+
+.gallery li{
+    height: 160px !important;
+    display: flex;
+    align-items: center;
+}
+
+.banner{
+    overflow: hidden;
+}
+
+.banner .imgbox{
+    display: block;
+    height: 200px;
+    background-image: url("../asset/C3/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery img{
+    padding: 0 5px;
+}
+
+#ft h1{
+    text-align: center;
+}
+
+#ft .copyright{
+    text-align: center;
+}
+
+#ft{
+    background-color: #222;
+    height: 100px;
+}
+
+#ft .ftbox li{
+    padding: 5px 10px;
+}
+
+#ft .ftbox li a{
+    color: gray;
+}
+
+.copyright{
+    padding: 5px 0;
+    color: gray;
+}
