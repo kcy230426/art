@@ -436,3 +436,79 @@ padding: 5px;
 #ft li a{
 color: whitesmoke;
 }
+
+
+
+.else.on .popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    background-image: url("../asset/E1/bg.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    z-index: 999;
+}
+
+
+.else.on .popup button{
+    width: 70px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.else.on .popup h3{
+    text-align: center;
+    font-family: 'Caprasimo',serif;
+    font-size: 30pt;
+}
+
+.highlight{
+    text-align: center;
+    font-family: 'Caprasimo',serif;
+    font-size: 30pt;
+    display: block;
+    color: rgb(119, 151, 238);
+}
+
+.date{
+    font-size: 13pt;
+    margin: 10px auto;
+    color: rgb(76, 91, 131);
+    background-color:rgb(213, 223, 255);
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+.else.on .popup .btn{
+    margin-top: 20px;
+}
+
+.else.on .popup button{
+    font-size: 14pt;
+}
+
+.else.on .bg{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.else.on .popup button:hover{
+    background-color:  rgb(76, 91, 131);
+    color:white;
+    border: 1px rgb(76, 91, 131) solid;
+    border-radius: 5px;
+}

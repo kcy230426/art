@@ -6,4 +6,8 @@ $(function(){
             $(this).css("margin-left",0);
         })
     },3000)
+    $("body").on("click",".else button",function(){
+        $(".else").removeClass("on");
+        $(".else").addClass("d-none");
+    })
 })
