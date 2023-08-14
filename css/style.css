@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'blueload';
+    src: url('../asset/E1/Yeongdeok\ Blueroad.ttf');
+}
+
 *{
+    font-family: 'blueload';
     padding: 0;
     margin: 0;
 }
@@ -40,7 +46,7 @@ a, a:hover{
     justify-content: center;
 }
 
-.jusitfy-content-between{
+.justify-content-between{
     justify-content: space-between;
 }
 
@@ -86,6 +92,90 @@ a, a:hover{
 
 /* 개별 클래스 */
 
+#left{
+    width: 200px;
+    background-color: rgb(243, 243, 243);
+    overflow: hidden;
+}
+
 #left h1 img{
-    width: 100%;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+
+#left #gnb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#left #gnb > li > a {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    font-size: 13pt;
+}
+
+
+#gnb .d2ul{
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+#gnb > li:hover > a{
+    background-color: #222;
+    color: white;
+}
+
+#gnb li:hover .d2ul{
+    height: auto;
+}
+
+#gnb .d2ul > li > a{
+    width: 200px;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13pt;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    transition: 0.2s;
+}
+
+#gnb .d2ul > li:hover > a{
+    background-color: rgb(255, 205, 69);
+    color: #222;
+}
+
+#left .side{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 12pt;
+}
+
+#left .side .first::after{
+    content: "|";
+    /* border: 1px solid black; */
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 12pt;
+}
+
+#center{
+    width: 400px;
+    background-color: rgb(216, 216, 216);
+}
+
+#right{
+    width:calc(100% - 200px - 400px);
+    background-color: rgb(196, 228, 255);
 }
