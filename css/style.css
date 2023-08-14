@@ -381,6 +381,7 @@ padding: 5px;
 .slidebox li{
     width: 100%;
     height: calc(100vh - 120px);
+    overflow: hidden;
 }
 
 .slidebox img{
@@ -391,4 +392,47 @@ padding: 5px;
 
 #right .slidebox a, #right .slidebox img{
     display: block;
+}
+
+#ft{
+    background-color: rgb(76, 91, 131);
+    height: 120px;
+    box-sizing: border-box;
+}
+
+#ft h1{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#ft h1 img{
+    display: block;
+    width: 150px;
+    opacity: 0.7;
+}
+
+#ft .content{
+    padding: 15px;
+}
+
+.ful > li{
+    padding: 8px;
+    border-right: 1px solid whitesmoke;
+    opacity: 0.9;
+    box-sizing: border;
+}
+
+.ful2 > li:nth-child(1){
+    padding: 5px;
+}
+
+.content{
+    flex: 1;
+}
+
+#ft li a{
+color: whitesmoke;
 }
