@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&family=Lobster&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -84,8 +86,135 @@ a, a:hover{
     position: relative;
 }
 
+.mr4{
+    margin-right: 4px;
+}
+
+.ovh{
+    overflow: hidden;
+}
+
 /* 개별 클래스 */
+
+#left{
+    background-color: rgb(26, 25, 25);
+}
+
+#left h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#left h1 a{
+    width: 100px;
+}
 
 #left h1 img{
     width: 100%;
+}
+
+#left a, #left img{
+    display: block;
+}
+
+#left{
+    width: 200px;
+}
+
+#gnb .d2ul{
+    height: 0;
+    overflow: hidden;
+}
+
+#gnb > li > a{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: "Gelasio", serif;
+}
+
+#gnb{
+    margin: 30px 0;
+}
+
+.linkmenu{
+    margin: 40px 0;
+}
+
+.linkmenu a{
+    display: block;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    font-size: 11pt;
+    line-height: 20px;
+    /* background-color: rgb(90, 90, 90); */
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    color: white;
+    font-family: "Gelasio", serif;
+    padding: 10px;
+}
+
+#gnb > li:hover > a{
+    background-color: gray;
+    color: black;
+}
+
+.linkmenu li:hover a{
+    background-color: gray;
+    color: rgb(255, 255, 255);
+    border: 1px solid gray;
+}
+
+#right{
+    width: calc(100% - 200px);
+    background-color: navy;
+}
+
+#slide{
+    height: 400px;
+}
+
+#slide .slidebox{
+    width: 300%;
+    display: flex;
+}
+
+.slidebox li{
+    width: 33.3333%;
+}
+
+.slidebox li img{
+    width: 100%;
+    height: auto;
+}
+
+#board{
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+#board h3{
+    margin-bottom: 10px;
+}
+
+#board img{
+    margin-left: 50px;
+    width: 150px;
+}
+
+#board .imgbox{
+    margin-right: 40px;
 }
