@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Gelasio&family=Lobster&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Gelasio&display=swap');
 
 *{
+    font-family: 'Pretendard-Regular';
     padding: 0;
     margin: 0;
 }
@@ -16,6 +24,10 @@ a, a:hover{
 
 .container{
     width: 1200px;
+}
+
+.d-none{
+    display: none;
 }
 
 .d-block{
@@ -36,6 +48,10 @@ a, a:hover{
 
 .flex-wrap{
     flex-wrap: wrap;
+}
+
+.flex-column{
+    flex-direction: column;
 }
 
 .justify-content-center{
@@ -94,10 +110,34 @@ a, a:hover{
     overflow: hidden;
 }
 
+.bbt{
+    border-bottom: 1px solid gray;
+}
+
+
+.br{
+    border-right: 1px solid black;
+}
+
+.nbb{
+    border-bottom: 0 !important;
+}
+
+.col-3{
+    width: 33.3333%;
+}
+
+
+
+
 /* 개별 클래스 */
 
+#all{
+    position: relative;
+}
+
 #left{
-    background-color: rgb(26, 25, 25);
+    background-color: rgb(22, 22, 22);
 }
 
 #left h1{
@@ -105,17 +145,19 @@ a, a:hover{
     justify-content: center;
     align-items: center;
     width: 200px;
-    margin-top: 20px;
+    height: 100px;
+    margin-top: 40px;
     padding: 10px;
     box-sizing: border-box;
 }
 
 #left h1 a{
-    width: 100px;
+    height: 100px;
 }
 
 #left h1 img{
-    width: 100%;
+    width: auto;
+    height: 100px;
 }
 
 #left a, #left img{
@@ -129,16 +171,18 @@ a, a:hover{
 #gnb .d2ul{
     height: 0;
     overflow: hidden;
+    transition: 0.2s;
 }
 
 #gnb > li > a{
     width: 200px;
     height: 40px;
     line-height: 40px;
+    font-size: 14pt;
     display: block;
     color: white;
     text-align: center;
-    font-family: "Gelasio", serif;
+    font-family: "Cardo", serif;
 }
 
 #gnb{
@@ -154,30 +198,50 @@ a, a:hover{
     text-align: center;
     width: 60px;
     height: 20px;
-    font-size: 11pt;
+    font-size: 12pt;
     line-height: 20px;
     /* background-color: rgb(90, 90, 90); */
     border: 1px solid rgb(255, 255, 255);
     border-radius: 50px;
     color: white;
-    font-family: "Gelasio", serif;
-    padding: 10px;
+    font-family: "Cardo", serif;
+    padding: 6px;
 }
 
 #gnb > li:hover > a{
-    background-color: gray;
+    background-color: rgb(146, 146, 146);
     color: black;
 }
 
+#gnb li:hover .d2ul{
+    height: auto;
+}
+
+.d2ul > li > a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(52, 54, 58);
+    text-align: center;
+    color: white;
+    font-size: 11pt;
+}
+
+.d2ul li:hover a{
+    background-color: rgb(252, 237, 173);
+    color: #2e2b1b;
+}
+
+
 .linkmenu li:hover a{
-    background-color: gray;
-    color: rgb(255, 255, 255);
-    border: 1px solid gray;
+    background-color: rgb(252, 237, 173);
+    color: #2e2b1b;
+    border: 1px solid rgb(252, 237, 173);
 }
 
 #right{
     width: calc(100% - 200px);
-    background-color: navy;
+    background-color:rgb(43, 43, 43);
 }
 
 #slide{
@@ -199,22 +263,278 @@ a, a:hover{
 }
 
 #board{
-    background-color: white;
-    padding: 20px;
+    background-color: rgb(15, 15, 15);
     margin: 20px;
     height: 200px;
     box-sizing: border-box;
 }
 
 #board h3{
+    font-family: "Cardo", serif;
+    font-size: 22pt;
+    letter-spacing: -0.3px;
     margin-bottom: 10px;
+    color: white;
+}
+
+#board span{
+    color: rgb(224, 224, 224);
+    font-size: 14pt;
 }
 
 #board img{
-    margin-left: 50px;
-    width: 150px;
+    width: 100%;
 }
 
 #board .imgbox{
+    width: 500px;
+    height: 200px;
     margin-right: 40px;
+    overflow: hidden;
+}
+
+#links{
+    position: absolute;
+    top: 3%;
+    right: 1%;
+    z-index: 9999;
+    background-color: rgba(15, 15, 15, 0.726);
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 120px;
+    height: 340px;
+    padding: 0 30px;
+}
+
+#links li{
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(73, 73, 73);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#links a{
+    display: block;
+    width:50px;
+    height:50px;
+}
+
+#links img{
+    width: 100%;
+    height: auto;
+}
+
+#links li div{
+    text-align: center;
+    font-size: 11pt;
+    color: white;
+    margin-top: 10px;
+}
+
+#board button{
+    margin-left: 60px;
+    font-family: "Cardo", serif;
+    width: 220px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16pt;
+}
+
+.ectbox{
+    width: calc(100% - 500px);
+   justify-content: center;
+   align-items: center;
+}
+
+#board button:hover{
+    background-color: rgb(252, 237, 173);
+    color: #2e2b1b;
+}
+
+#commu{
+    padding: 20px;
+    height: 250px;
+    box-sizing: border-box;
+}
+
+#commu .title{
+    display: flex;
+    width: 200px;
+    /* border-radius: 5px 5px 0 0; */
+    box-sizing: border-box;
+    /* border-top: 1px solid black; */
+}
+
+#commu .title div a{
+    background-color:rgb(22, 22, 22);
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 13pt;
+    font-family: "Cardo", serif;
+    border-radius: 5px 5px 0 0;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#commu #notice.on, #commu #gallery.on{
+    border: 1px solid black;
+    background-color: white;
+    overflow: hidden;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#commu #notice.on li{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#commu #notice.on li{
+    height: calc(160px / 5);
+    line-height: calc(160px / 5);
+    border-bottom: 1px gray solid;
+}
+
+#commu #notice.on li a{
+    display: block;
+    font-size: 11pt;
+}
+
+#commu #notice.on li span{
+    font-size: 11pt;
+}
+
+.title .ntitle.on a, .title .gtitle.on a{
+    color: #2e2b1b !important;
+    border-radius: 5px 5px 0 0 ;
+    background-color:  rgb(252, 237, 173) !important;
+}
+
+#notice{
+    display: none;
+}
+
+#gallery{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 160px;
+    box-sizing: border-box;
+}
+
+#gallery.on{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 162px;
+    box-sizing: border-box;
+}
+
+#notice{
+    display: block;
+    width: 100%;
+}
+
+#gallery.on li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery.on li a{
+    display: block;
+    width: 200px;
+    height: auto;
+}
+
+#gallery.on li img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#ft{
+    height: 100px;
+    background-color: black;
+}
+
+
+#ft h3{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#ft h3 img{
+    opacity: 0.8;
+    width: 100%;
+    height: auto;
+}
+
+
+#ft .cbox{
+    /* width: calc(100% - 200px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+
+#ftbox div .content1, #ftbox div .content2{
+    color: white;
+}
+
+#ftbox .fticons a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+#ftbox .fticons a img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cbox div{
+    color: gray !important;
+}
+
+.two{
+    width: 100%;
+}
+
+.fticons{
+    width: calc(100% - 70%);
+    justify-content: center;
+}
+
+.cbox{
+    width: calc(100% - 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
