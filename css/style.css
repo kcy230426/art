@@ -228,6 +228,7 @@ a, a:hover{
 }
 
 .d2ul li:hover a{
+    transition: 0.3s;
     background-color: rgb(252, 237, 173);
     color: #2e2b1b;
 }
@@ -237,6 +238,7 @@ a, a:hover{
     background-color: rgb(252, 237, 173);
     color: #2e2b1b;
     border: 1px solid rgb(252, 237, 173);
+    transition: 0.2s;
 }
 
 #right{
@@ -353,6 +355,7 @@ a, a:hover{
 #board button:hover{
     background-color: rgb(252, 237, 173);
     color: #2e2b1b;
+    transition: 0.3s;
 }
 
 #commu{
@@ -417,6 +420,7 @@ a, a:hover{
 }
 
 .title .ntitle.on a, .title .gtitle.on a{
+    transition: 0.3s;
     color: #2e2b1b !important;
     border-radius: 5px 5px 0 0 ;
     background-color:  rgb(252, 237, 173) !important;

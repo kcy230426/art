@@ -131,5 +131,30 @@
     </footer>
     <script src="js/jquery-1.12.3.js"></script>
     <script src="js/slide.js"></script>
+    <script>
+        const d2ulElements = document.querySelectorAll('#gnb .d2ul');
+        
+        d2ulElements.forEach(d2ul => {
+            d2ul.style.maxHeight = '0px';
+            d2ul.style.overflow = 'hidden';
+            d2ul.style.transition = 'max-height 0.4s ease-out';
+        });
+    
+        document.querySelectorAll('#gnb li').forEach(li => {
+            li.addEventListener('mouseover', () => {
+                const d2ul = li.querySelector('.d2ul');
+                if (d2ul) {
+                    d2ul.style.maxHeight = d2ul.scrollHeight + 'px';
+                }
+            });
+    
+            li.addEventListener('mouseout', () => {
+                const d2ul = li.querySelector('.d2ul');
+                if (d2ul) {
+                    d2ul.style.maxHeight = '0';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
