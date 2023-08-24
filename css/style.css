@@ -186,7 +186,7 @@ a, a:hover{
 }
 
 #slide .slidebox{
-    width: 3600px;
+    /* width: 3600px; */
 }
 
 #slide p{
@@ -344,6 +344,8 @@ a, a:hover{
     line-height: 40px;
     display: flex;
 }
+
+
 
 .popup button, .gallerypop button{
     position: absolute;
